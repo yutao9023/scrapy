@@ -65,9 +65,10 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
+#数值越小 优先级越高
 ITEM_PIPELINES = {
     'quotetutorial.pipelines.TextPipeline': 300,
-    'quotetutorial.pipelines.MongoPipeline':400,
+    'quotetutorial.pipelines.MongoPipeline': 400,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
